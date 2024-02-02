@@ -12,7 +12,7 @@
 
 
 body {
-    background-color: #FFFFEC;
+    background-color: #f0f0ed;
     font-family: 'Open Sans', sans-serif;
     
 }
@@ -128,7 +128,7 @@ body {
 .card {
   transition: transform 0.3s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px; /* Ajusta según sea necesario */
+  margin: 10px; 
 }
 
 .card:hover {
@@ -170,7 +170,7 @@ body {
   width: 160px;
   height: 5px;
   border-radius: 5px;
-  margin: 10px auto; /* Ajusta según sea necesario */
+  margin: 10px auto; 
 }
 
 .card-body .btn-primary {
@@ -570,4 +570,153 @@ select {
   .filtros {
     width: 100%;
   }
+}
+
+
+
+/* guia */
+
+.container-guia body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+.container-guia {
+  max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.container-guia img {
+  width: 40%;
+  float: right;
+  border-radius: 8px 0 0 8px;
+}
+
+.text {
+  width: 55%;
+  float: left;
+  padding: 20px;
+}
+
+.container-guia h2 {
+  color: #333;
+}
+
+.container-guia p {
+  color: #666;
+}
+
+
+  
+
+
+
+/* envios */
+
+
+.envios body {
+ 
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.envios header {
+  background-color: #e4d3b4;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.envios h1 {
+  margin-bottom: 20px;
+}
+
+.envios section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.envios p {
+  margin-bottom: 20px;
+}
+
+iframe {
+  max-width: 100%;
+  width: 800px;
+  height: 450px; 
+}
+
+
+
+
+/*  Contacto*/
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilos para la sección de contacto */
+.contacto-form {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-form h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los campos del formulario */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+/* Estilos para el botón del formulario */
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #597E52;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary :hover{
+  color: #8dc981;
 }
