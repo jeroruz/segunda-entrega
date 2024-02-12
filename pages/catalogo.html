@@ -1,291 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link de boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link de boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!-- link al css -->
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Catalogo</title>
+  <!-- link al css -->
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Catalogo</title>
 </head>
-<body class=>
-    <main>
-        <nav class="navbar navbar-expand-lg bg-green sticky-top">
-            <div class="container">
 
-              <a class="navbar-brand fs-4" href="../index.html">La Agropecuaria</a>
+<body>
+  <header>
+    <!-- Nav-bar -->
+      <nav class="navbar navbar-expand-lg bg-green sticky-top">
+          <div class="container">
 
-              <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <!-- side-bar -->
-              <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <!-- sidebar header -->
-                <div class="offcanvas-header text-white border-bottom">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">La Agropecuaria</h5>
-                  <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <!-- sidebar body -->
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
-                  
-                    <li class="nav-item mx-2">
-                      <a class="nav-link" href="catalogo.html">Catalogo</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="envios.html">Envios</a>
-                      </li>
-                      <li class="nav-item mx-2">
-                        <a class="nav-link" href="guia.html">Guia</a>
-                      </li>
-                      <li class="nav-item mx-2">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                      </li>
-                      </ul>
-                      <img  class="cart-logo" src="../assets/images/cart-logo.png" alt="" width="40px" height="30px">
-                    <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </nav>
-          
-          <div class="contenedor-general">
-            <div class="filtros">
-              <h2>Filtros</h2>
-              <ul>
-                <li><a href="#">Accesorios</a></li>
-                <li><a href="#">Raciones animales</a></li>
-                <li><a href="#">Vestimenta</a></li>
-                <li><a href="#">Castrados</a></li>
-                <li><a href="#">Cachorro</a></li>
-                <li><a href="#">Adulto</a></li>
-              </ul>
-            </div>
+          <a class="navbar-brand fs-4" href="../index.html">La Agropecuaria</a>
 
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+      <!-- side-bar -->
+        <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+      <!-- sidebar header -->
+        <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">La Agropecuaria</h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+        </div>
+      <!-- sidebar body -->
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
 
-          <div class="container-catalogo">
-            <!-- Producto 1 -->
-            <div class="producto">
-              <img src="../assets/images/SpecialDog/specialdog-prime.jpg" alt=Producto 1">
-              <h3>SpecialDog<br> Prime</h3>
-              <p>Perro Adulto</p>
-              <div class="detalles">
-                <span class="precio">$2800</span>
-                <label for="state">State:</label> <select id="state">
-                  <option value="1">1 unidad</option>
-                  <option value="2">2 unidades</option>
-                  <option value="3">3 unidades</option>
-                </select>
-                <button>Comprar</button>
-              </div>
-            </div>
-            <div class="producto">
-              <img src="../assets/images/SpecialDog/specialcat-adultos.png" alt="Producto 2">
-              <h3>SpecialCat</h3>
-              <p>Adultos</p>
-              <div class="detalles">
-                <span class="precio">$2800</span>
-                <label for="state">State:</label> <select id="state">
-                  <option value="1">1 unidad</option>
-                  <option value="2">2 unidades</option>
-                  <option value="3">3 unidades</option>
-               
-                </select>
-                <button>Comprar</button>
-              </div>
-            </div>
-            <div class="producto">
-              <img src="../assets/images/SpecialDog/specialcat-prime.jpeg" alt="Producto 3">
-              <h3>SpecialCat <br> Prime</h3>
-              <p>Adultos</p>
-              <div class="detalles">
-                <span class="precio">$2800</span>
-                <label for="state">State:</label> <select id="state">
-                  <option value="1">1 unidad</option>
-                  <option value="2">2 unidades</option>
-                  <option value="3">3 unidades</option>
-               
-                </select>
-                <button>Comprar</button>
-              </div>
-            </div>
-            <div class="producto">
-              <img src="../assets/images/SpecialDog/specialcat-castrados.png" alt="Producto 4">
-              <h3>SpecialCat</h3>
-              <p>Castrados</p>
-              <div class="detalles">
-                <span class="precio">$2800</span>
-                <label for="state">State:</label> <select id="state">
-                  <option value="1">1 unidad</option>
-                  <option value="2">2 unidades</option>
-                  <option value="3">3 unidades</option>
-               
-                </select>
-                <button>Comprar</button>
-              </div>
-            </div>
-            <div class="producto">
-              <img src="../assets/images/Lager/lager-perro-adultos.png" alt="Producto 5">
-              <h3>Lager</h3>
-              <p>Adultos</p>
-              <div class="detalles">
-                <span class="precio">$2800</span>
-                <label for="state">State:</label> <select id="state">
-                  <option value="1">1 unidad</option>
-                  <option value="2">2 unidades</option>
-                  <option value="3">3 unidades</option>
-               
-                </select>
-                <button>Comprar</button>
-              </div>
-            </div>
-            <div class="producto">
-              <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
-              <h3>Lager</h3>
-              <p>Adulto</p>
-              <div class="detalles">
-                <span class="precio">$2800</span>
-                <label for="state">State:</label> <select id="state">
-                  <option value="1">1 unidad</option>
-                  <option value="2">2 unidades</option>
-                  <option value="3">3 unidades</option>
-               
-                </select>
-                <button>Comprar</button>
-              </div>
-            </div>   
-            <div class="producto">
-              <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
-              <h3>Lager</h3>
-              <p>Adulto</p>
-              <div class="detalles">
-                <span class="precio">$2800</span>
-                <label for="state">State:</label> <select id="state">
-                  <option value="1">1 unidad</option>
-                  <option value="2">2 unidades</option>
-                  <option value="3">3 unidades</option>
-               
-                </select>
-                <button>Comprar</button>
-              </div>
-            </div>
-            <div class="producto">
-              <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
-              <h3>Lager</h3>
-              <p>Adulto</p>
-              <div class="detalles">
-                <span class="precio">$2800</span>
-                <label for="state">State:</label> <select id="state">
-                  <option value="1">1 unidad</option>
-                  <option value="2">2 unidades</option>
-                  <option value="3">3 unidades</option>
-               
-                </select>
-                <button>Comprar</button>
-              </div>
-            </div>
-            <div class="producto">
-              <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
-              <h3>Lager</h3>
-              <p>Adulto</p>
-              <div class="detalles">
-                <span class="precio">$2800</span>
-                <label for="state">State:</label> <select id="state">
-                  <option value="1">1 unidad</option>
-                  <option value="2">2 unidades</option>
-                  <option value="3">3 unidades</option>
-               
-                </select>
-                <button>Comprar</button>
-              </div>
-            </div>
-            <div class="producto">
-              <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
-              <h3>Lager</h3>
-              <p>Adulto</p>
-              <div class="detalles">
-                <span class="precio">$2800</span>
-                <label for="state">State:</label> <select id="state">
-                  <option value="1">1 unidad</option>
-                  <option value="2">2 unidades</option>
-                  <option value="3">3 unidades</option>
-               
-                </select>
-                <button>Comprar</button>
-              </div>
-            </div>
-            <div class="producto">
-              <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
-              <h3>Lager</h3>
-              <p>Adulto</p>
-              <div class="detalles">
-                <span class="precio">$2800</span>
-                <label for="state">State:</label> <select id="state">
-                  <option value="1">1 unidad</option>
-                  <option value="2">2 unidades</option>
-                  <option value="3">3 unidades</option>
-               
-                </select>
-                <button>Comprar</button>
-              </div>
-            </div>
-            <div class="producto">
-              <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
-              <h3>Lager</h3>
-              <p>Adulto</p>
-              <div class="detalles">
-                <span class="precio">$2800</span>
-                <label for="state">State:</label> <select id="state">
-                  <option value="1">1 unidad</option>
-                  <option value="2">2 unidades</option>
-                  <option value="3">3 unidades</option>
-               
-                </select>
-                <button>Comprar</button>
-              </div>
-            </div>
-        
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="catalogo.html">Catalogo</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="envios.html">Envios</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="guia.html">Guia</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <img class="cart-logo" src="../assets/images/cart-logo.png" alt="" width="40px" height="30px">
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        
-          </div>
-        </main>
-<!-- footer -->
-<div class="footer">
-  <div class="container">
-  <div class="row">
-      <div class="footer-col-1">
-        <img src="../assets/images/logo.png" alt="">
-        <p>Nuestro proposito es satisfacer las necesidades de los usuarios con los mejores productos al mejor precio</p>
-        <div class="footer-col-2">
-          <h3>Links útiles</h3>
-          <ul>
-            <li>Envios</li>
-            <li>Contacto</li>
-            <li>Catálogo</li>
-            <li>Guia</li>
-    </div>    
-    <div class="footer-col-3">
-      <h3>Síguenos</h3>
+<main>
+
+<!-- Search filters -->
+  <div class="contenedor-general">
+    <div class="filtros">
+      <h2>Filtros</h2>
       <ul>
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>Instagram</li>
-</div>   
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Raciones animales</a></li>
+        <li><a href="#">Vestimenta</a></li>
+        <li><a href="#">Castrados</a></li>
+        <li><a href="#">Cachorro</a></li>
+        <li><a href="#">Adulto</a></li>
+      </ul>
     </div>
-</div>
-</div>
-</div>
 
+<!-- Catalogue -->
+    <div class="container-catalogo">
+      <!-- Product 1 -->
+      <div class="producto">
+        <img src="../assets/images/SpecialDog/specialdog-prime.jpg" alt=Producto 1">
+        <h3>SpecialDog<br> Prime</h3>
+        <p>Perro Adulto</p>
+        <div class="detalles">
+          <span class="precio">$2800</span>
+          <label for="state">State:</label> <select id="state">
+            <option value="1">1 unidad</option>
+            <option value="2">2 unidades</option>
+            <option value="3">3 unidades</option>
+          </select>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="producto">
+        <img src="../assets/images/SpecialDog/specialcat-adultos.png" alt="Producto 2">
+        <h3>SpecialCat</h3>
+        <p>Adultos</p>
+        <div class="detalles">
+          <span class="precio">$2800</span>
+          <label for="state">State:</label> <select id="state">
+            <option value="1">1 unidad</option>
+            <option value="2">2 unidades</option>
+            <option value="3">3 unidades</option>
+          </select>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="producto">
+        <img src="../assets/images/SpecialDog/specialcat-prime.jpeg" alt="Producto 3">
+        <h3>SpecialCat <br> Prime</h3>
+        <p>Adultos</p>
+        <div class="detalles">
+          <span class="precio">$2800</span>
+          <label for="state">State:</label> <select id="state">
+            <option value="1">1 unidad</option>
+            <option value="2">2 unidades</option>
+            <option value="3">3 unidades</option>
+          </select>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="producto">
+        <img src="../assets/images/SpecialDog/specialcat-castrados.png" alt="Producto 4">
+        <h3>SpecialCat</h3>
+        <p>Castrados</p>
+        <div class="detalles">
+          <span class="precio">$2800</span>
+          <label for="state">State:</label> <select id="state">
+            <option value="1">1 unidad</option>
+            <option value="2">2 unidades</option>
+            <option value="3">3 unidades</option>
+          </select>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <!-- Product 5 -->
+      <div class="producto">
+        <img src="../assets/images/Lager/lager-perro-adultos.png" alt="Producto 5">
+        <h3>Lager</h3>
+        <p>Adultos</p>
+        <div class="detalles">
+          <span class="precio">$2800</span>
+          <label for="state">State:</label> <select id="state">
+            <option value="1">1 unidad</option>
+            <option value="2">2 unidades</option>
+            <option value="3">3 unidades</option>
+          </select>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <!-- Product 6 -->
+      <div class="producto">
+        <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
+        <h3>Lager</h3>
+        <p>Adulto</p>
+        <div class="detalles">
+          <span class="precio">$2800</span>
+          <label for="state">State:</label> <select id="state">
+            <option value="1">1 unidad</option>
+            <option value="2">2 unidades</option>
+            <option value="3">3 unidades</option>
+          </select>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <!-- Product 7 -->
+      <div class="producto">
+        <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
+        <h3>Lager</h3>
+        <p>Adulto</p>
+        <div class="detalles">
+          <span class="precio">$2800</span>
+          <label for="state">State:</label> <select id="state">
+            <option value="1">1 unidad</option>
+            <option value="2">2 unidades</option>
+            <option value="3">3 unidades</option>
+          </select>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <!-- Product 8 -->
+      <div class="producto">
+        <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
+        <h3>Lager</h3>
+        <p>Adulto</p>
+        <div class="detalles">
+          <span class="precio">$2800</span>
+          <label for="state">State:</label> <select id="state">
+            <option value="1">1 unidad</option>
+            <option value="2">2 unidades</option>
+            <option value="3">3 unidades</option>
+          </select>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <!-- Product 9 -->
+      <div class="producto">
+        <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
+        <h3>Lager</h3>
+        <p>Adulto</p>
+        <div class="detalles">
+          <span class="precio">$2800</span>
+          <label for="state">State:</label> <select id="state">
+            <option value="1">1 unidad</option>
+            <option value="2">2 unidades</option>
+            <option value="3">3 unidades</option>
+          </select>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <!-- Product 10 -->
+      <div class="producto">
+        <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
+        <h3>Lager</h3>
+        <p>Adulto</p>
+        <div class="detalles">
+          <span class="precio">$2800</span>
+          <label for="state">State:</label> <select id="state">
+            <option value="1">1 unidad</option>
+            <option value="2">2 unidades</option>
+            <option value="3">3 unidades</option>
+          </select>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <!-- Product 11 -->
+      <div class="producto">
+        <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
+        <h3>Lager</h3>
+        <p>Adulto</p>
+        <div class="detalles">
+          <span class="precio">$2800</span>
+          <label for="state">State:</label> <select id="state">
+            <option value="1">1 unidad</option>
+            <option value="2">2 unidades</option>
+            <option value="3">3 unidades</option>
+          </select>
+          <button>Comprar</button>
+        </div>
+      </div>
+      <!-- Product 12 -->
+      <div class="producto">
+        <img src="../assets/images/Lager/lager-gato-adulto.jpeg" alt="Producto 6">
+        <h3>Lager</h3>
+        <p>Adulto</p>
+        <div class="detalles">
+          <span class="precio">$2800</span>
+          <label for="state">State:</label> <select id="state">
+            <option value="1">1 unidad</option>
+            <option value="2">2 unidades</option>
+            <option value="3">3 unidades</option>
+          </select>
+          <button>Comprar</button>
+        </div>
+      </div>
+    </div>
+    </main>
+    
+<!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <img src="../assets/images/logo.png" alt="">
+            <p>Nuestro proposito es satisfacer las necesidades de los usuarios con los mejores productos al mejor precio
+            </p>
+            <div class="footer-col-2">
+              <h3>Links útiles</h3>
+              <ul>
+                <li>Envios</li>
+                <li>Contacto</li>
+                <li>Catálogo</li>
+                <li>Guia</li>
+            </div>
+            <div class="footer-col-3">
+              <h3>Síguenos</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-
-
-
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
 </body>
+</html>

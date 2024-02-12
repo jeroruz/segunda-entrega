@@ -2,243 +2,268 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link de boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link de boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!-- link al css -->
-    <link rel="stylesheet" href="css/style.css">
-    <title>La Agropecuaria</title>
+  <!-- link al css -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>La Agropecuaria</title>
 </head>
 
 <body>
-    <main>
-        <nav class="navbar navbar-expand-lg bg-green sticky-top">
-            <div class="container">
 
-              <a class="navbar-brand fs-4" href="#">La Agropecuaria</a>
 
-              <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <!-- side-bar -->
-              <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <!-- sidebar header -->
-                <div class="offcanvas-header text-white border-bottom">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">La Agropecuaria</h5>
-                  <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <!-- sidebar body -->
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
-                  
-                    <li class="nav-item mx-2">
-                      <a class="nav-link" href="pages/catalogo.html">Catalogo</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="pages/envios.html">Envios</a>
-                      </li>
-                      <li class="nav-item mx-2">
-                        <a class="nav-link" href="pages/guia.html">Guia</a>
-                      </li>
-                      <li class="nav-item mx-2">
-                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                      </li>
-                      </ul>
-                      <img  class="cart-logo" src="assets/images/cart-logo.png" alt="" width="40px" height="30px">
-                    <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </div>
+  <header>
+    <!-- Nav-bar -->
+    <nav class="navbar navbar-expand-lg bg-green sticky-top">
+      <div class="container">
+
+        <a class="navbar-brand fs-4" href="#">La Agropecuaria</a>
+
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <!-- side-bar -->
+        <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+      <!-- sidebar header -->
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">La Agropecuaria</h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+      <!-- sidebar body -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="pages/catalogo.html">Catalogo</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="pages/envios.html">Envios</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="pages/guia.html">Guia</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <img class="cart-logo" src="assets/images/cart-logo.png" alt="" width="40px" height="30px">
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+
+
+
+
+    <!-- Carrousel hero -->
+    <section id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <article class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/carusel-1.jpg" class="d-block w-100" alt="imagen-promocion">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/carusel-2.png" class="d-block w-100" alt="imagen-promocion2">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/carusel-3.jpg" class="d-block w-100" alt="imagen-promocion3">
+        </div>
+      </article>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    <!-- benefits -->
+    <section id="beneficios">
+      <div class="container">
+        <ul>
+          <li class="beneficio-item"><img src="assets/images/metodo-pago.png" alt="Metodo de pago"> Hasta 12
+            cuotas sin interés</li>
+          <li class="beneficio-item"><img src="assets/images/envios-gratis.png" alt="Envios gratis"> Envíos
+            sin
+            costo a todo el país</li>
+          <li class="beneficio-item"><img src="assets/images/envios-19.png" alt="envios a partir de las 19 horas">
+            Envios luego de las 19:00hs</li>
+          <li class="beneficio-item"><img src="assets/images/descuentos.png"
+              alt="decuentos del 10% con tu primera compra"> Descuentos del 10% con tu primera compra</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!--  Featured products-->
+    <div class="container-destacados">
+      <h2>Nuestros destacados</h2>
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card" style="width: 18rem;">
+          <img src="assets/images/racion-prime.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Producto Lager</h5>
+            <p class="card-text">Descripción detallada del producto y sus características.</p>
+            <a href="#" class="btn btn-primary">Comprar ahora</a>
+            <span class="badge bg-secondary">10 disponibles</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" style="width: 18rem;">
+          <img src="assets/images/racion-lager.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Producto Lager</h5>
+            <p class="card-text">Descripción detallada del producto y sus características.</p>
+            <a href="#" class="btn btn-primary">Comprar ahora</a>
+            <span class="badge bg-secondary">10 disponibles</span>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card" style="width: 18rem;">
+          <img src="assets/images/racion-lager.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Producto Lager</h5>
+            <p class="card-text">Descripción detallada del producto y sus características.</p>
+            <a href="#" class="btn btn-primary">Comprar ahora</a>
+            <span class="badge bg-secondary">10 disponibles</span>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card" style="width: 18rem;">
+          <img src="assets/images/racion-lager.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Producto Lager</h5>
+            <p class="card-text">Descripción detallada del producto y sus características.</p>
+            <a href="#" class="btn btn-primary">Comprar ahora</a>
+            <span class="badge bg-secondary">10 disponibles</span>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Offers -->
+      <div class="container-ofertas">
+        <h2>Ofertas</h2>
+        <div class="card-container">
+          <div class="card" style="width: 18rem;">
+            <img src="assets/images/racion-prime.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Producto Lager</h5>
+              <p class="card-text">Descripción detallada del producto y sus características.</p>
+              <a href="#" class="btn btn-primary">Comprar ahora</a>
+              <span class="badge bg-secondary">10 disponibles</span>
             </div>
-          </nav>
-          
-
-
-          <section id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <article class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/images/carusel-1.jpg" class="d-block w-100" alt="imagen-promocion">
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/images/racion-lager.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Producto Lager</h5>
+              <p class="card-text">Descripción detallada del producto y sus características.</p>
+              <a href="#" class="btn btn-primary">Comprar ahora</a>
+              <span class="badge bg-secondary">10 disponibles</span>
             </div>
-            <div class="carousel-item">
-              <img src="assets/images/carusel-2.png" class="d-block w-100" alt="imagen-promocion2">
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/images/racion-lager.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Producto Lager</h5>
+              <p class="card-text">Descripción detallada del producto y sus características.</p>
+              <a href="#" class="btn btn-primary">Comprar ahora</a>
+              <span class="badge bg-secondary">10 disponibles</span>
             </div>
-            <div class="carousel-item">
-              <img src="assets/images/carusel-3.jpg" class="d-block w-100" alt="imagen-promocion3">
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/images/racion-lager.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Producto Lager</h5>
+              <p class="card-text">Descripción detallada del producto y sus características.</p>
+              <a href="#" class="btn btn-primary">Comprar ahora</a>
+              <span class="badge bg-secondary">10 disponibles</span>
             </div>
-          </article>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          </section>
-<!-- beneficios -->
-          <section id="beneficios">
-            <div class="container">
-                <ul>
-                    <li class="beneficio-item"><img src="assets/images/metodo-pago.png" alt="Metodo de pago"> Hasta 12
-                        cuotas sin interés</li>
-                    <li class="beneficio-item"><img src="assets/images/envios-gratis.png" alt="Envios gratis"> Envíos
-                        sin
-                        costo a todo el país</li>
-                    <li class="beneficio-item"><img src="assets/images/envios-19.png"
-                            alt="envios a partir de las 19 horas">
-                        Envios luego de las 19:00hs</li>
-                    <li class="beneficio-item"><img src="assets/images/descuentos.png"
-                            alt="decuentos del 10% con tu primera compra"> Descuentos del 10% con tu primera compra</li>
-                </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- Marcas -->
+      <div class="brands">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-5">
+              <img src="assets/images/eukanuba-logo.png" alt="">
             </div>
-        </section>
+            <div class="col-5">
+              <img src="assets/images/lager-logo.png" alt="">
+            </div>
+            <div class="col-5">
+              <img src="assets/images/specialdog-logo.png" alt="">
+            </div>
+            <div class="col-5">
+              <img src="assets/images/logo-nutrican.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <!-- footer -->
 
 
-
-     <!-- Destacados -->
-                    <div class="container-destacados">
-                      <h2>Nuestros destacados</h2>
-                      <div class="card-container">
-                        <!-- tarjeta 1 -->
-                        <div class="card" style="width: 18rem;">
-                          <img src="assets/images/racion-prime.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Producto Lager</h5>
-                            <p class="card-text">Descripción detallada del producto y sus características.</p>
-                            <a href="#" class="btn btn-primary">Comprar ahora</a>
-                            <span class="badge bg-secondary">10 disponibles</span>
-                          </div>
-                        </div>
-                    
-                        <!-- Tarjeta 2 -->
-                        <div class="card" style="width: 18rem;">
-                          <img src="assets/images/racion-lager.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Producto Lager</h5>
-                            <p class="card-text">Descripción detallada del producto y sus características.</p>
-                            <a href="#" class="btn btn-primary">Comprar ahora</a>
-                            <span class="badge bg-secondary">10 disponibles</span>
-                          </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                          <img src="assets/images/racion-lager.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Producto Lager</h5>
-                            <p class="card-text">Descripción detallada del producto y sus características.</p>
-                            <a href="#" class="btn btn-primary">Comprar ahora</a>
-                            <span class="badge bg-secondary">10 disponibles</span>
-                          </div>
-                        </div>
-                        <div class="card" style="width: 18rem;">
-                          <img src="assets/images/racion-lager.png" class="card-img-top" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Producto Lager</h5>
-                            <p class="card-text">Descripción detallada del producto y sus características.</p>
-                            <a href="#" class="btn btn-primary">Comprar ahora</a>
-                            <span class="badge bg-secondary">10 disponibles</span>
-                          </div>
-                        </div>
-                    </div>
-<!-- Ofertas -->
-
-
-<div class="container-ofertas">
-  <h2>Ofertas</h2>
-  <div class="card-container">
-    <div class="card" style="width: 18rem;">
-      <img src="assets/images/racion-prime.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Producto Lager</h5>
-        <p class="card-text">Descripción detallada del producto y sus características.</p>
-        <a href="#" class="btn btn-primary">Comprar ahora</a>
-        <span class="badge bg-secondary">10 disponibles</span>
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <img src="assets/images/logo.png" alt="">
+            <p>Nuestro proposito es satisfacer las necesidades de los usuarios con los mejores productos al mejor precio
+            </p>
+            <div class="footer-col-2">
+              <h3>Links útiles</h3>
+              <ul>
+                <li>Envios</li>
+                <li>Contacto</li>
+                <li>Catálogo</li>
+                <li>Guia</li>
+            </div>
+            <div class="footer-col-3">
+              <h3>Síguenos</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem;">
-      <img src="assets/images/racion-lager.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Producto Lager</h5>
-        <p class="card-text">Descripción detallada del producto y sus características.</p>
-        <a href="#" class="btn btn-primary">Comprar ahora</a>
-        <span class="badge bg-secondary">10 disponibles</span>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="assets/images/racion-lager.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Producto Lager</h5>
-        <p class="card-text">Descripción detallada del producto y sus características.</p>
-        <a href="#" class="btn btn-primary">Comprar ahora</a>
-        <span class="badge bg-secondary">10 disponibles</span>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="assets/images/racion-lager.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Producto Lager</h5>
-        <p class="card-text">Descripción detallada del producto y sus características.</p>
-        <a href="#" class="btn btn-primary">Comprar ahora</a>
-        <span class="badge bg-secondary">10 disponibles</span>
-      </div>
-    </div>
-</div>
-<!-- Marcas -->
-<div class="brands">
-<div class="small-container">
-  <div class="row">
-    <div class="col-5">
-      <img src="assets/images/eukanuba-logo.png" alt="">
-    </div>
-    <div class="col-5">
-      <img src="assets/images/lager-logo.png" alt="">
-    </div>
-    <div class="col-5">
-      <img src="assets/images/specialdog-logo.png" alt="">
-    </div>
-    <div class="col-5">
-      <img src="assets/images/logo-nutrican.png" alt="">
-    </div>
-  </div>
-</div>
-</div> 
-    </main>
-
-<!-- footer -->
-<div class="footer">
-  <div class="container">
-  <div class="row">
-      <div class="footer-col-1">
-        <img src="assets/images/logo.png" alt="">
-        <p>Nuestro proposito es satisfacer las necesidades de los usuarios con los mejores productos al mejor precio</p>
-        <div class="footer-col-2">
-          <h3>Links útiles</h3>
-          <ul>
-            <li>Envios</li>
-            <li>Contacto</li>
-            <li>Catálogo</li>
-            <li>Guia</li>
-    </div>    
-    <div class="footer-col-3">
-      <h3>Síguenos</h3>
-      <ul>
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>Instagram</li>
-</div>   
-    </div>
-</div>
-</div>
-</div>
+  </footer>
 
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
-
 </html>
