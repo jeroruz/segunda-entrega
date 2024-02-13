@@ -674,6 +674,7 @@ textarea.form-control {
     background-color: #161616;
     backdrop-filter: blur(10px);
 }
+}
 
 /* Media Queries para pantallas grandes (min-width: 1200px) */
 @media (min-width: 1200px) {
@@ -701,45 +702,4 @@ textarea.form-control {
     height: 300px;
   }
 }
-/* Media Queries para pantallas grandes (min-width: 1200px) */
-@media (min-width: 1200px) {
-  .col-5 {
-    width: calc(20% - 20px);
-    margin-right: 20px;
-    margin-bottom: 20px;
-  }
 
-  .col-5:last-child {
-    margin-right: 0;
-  }
-
-  .container-catalogo,
-  .contenedor-general {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .filtros {
-    width: 200px;
-  }
-
-  .producto img {
-    height: 300px;
-  }
-}
-
-/* Otras Media Queries */
-@media (max-width: 767px) {
-  .container-catalogo {
-    grid-template-columns: 1fr;
-    padding: 10px;
-  }
-
-  .producto img {
-    height: 150px;
-  }
-
-  .filtros {
-    width: 100%;
-  }
-}
